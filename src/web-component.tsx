@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { AdvertisementWidget } from './components/AdvertisementWidget';
+import { WidgetRoot } from './components/WidgetRoot';
 import styles from './index.css?inline';
 
 class LovableTemplateElement extends HTMLElement {
@@ -22,7 +22,7 @@ class LovableTemplateElement extends HTMLElement {
     this.root = ReactDOM.createRoot(container);
     this.root.render(
       <React.StrictMode>
-        <AdvertisementWidget />
+        <WidgetRoot />
       </React.StrictMode>
     );
   }
